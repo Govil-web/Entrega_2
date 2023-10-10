@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Super Eden</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar nav1">
+          <div class="container-fluid">
+            <span><a class="logo" href="#">Super Edén</a></span>
+            <a class=" text" href="pages/about.html">Acerca de</a>
+            <a class="text" href="pages/support.html">Atención al cliente</a>
+            <i class="fa-solid fa-user-tie">
+            <span><a class="text" href="pages/login.html">Entrar</a></span></i>
+          </div>
+        </nav>
+
+        <nav class="navbar nav2 navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="nav-item text" href="pages/promotion.html">Promociones</a>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="text" nav-item href="pages/food.html">Comida</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text" href="pages/drink.html">bebidas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text" href="pages/clean.html">Limpieza del hogar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text" href="pages/personalCare.html">Cuidado personal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="text" href="pages/best.html">Más vendidos</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-6" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-light" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/img1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/img2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/img3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section class="servicios">
+    <p>
+      <a class="btn" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Entrega gratis</a><i class="fa-solid fa-car-side icon-service"></i>
+      <button class="btn btn2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Entrega en tienda</button><i class="fa-solid fa-basket-shopping icon-service"></i>
+      <button class="btn btn2" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Asistencia online</button><i class="fa-solid fa-phone icon-service"></i>
+      <button class="btn btn2" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Pide en el camino<p class="app">Descarga la APP</p></button><i class="fa-solid fa-download icon-service"></i>
+    </p>
+  </section>
+  
+  <section class="products">
+      <h3>Más populares</h3>
+      <div class="card" style="width: 18rem;">
+        <h6 class="promo">Promoción</h6>
+        <img src="img/popular1.jpg" class="card-img-top" alt="Crema manos">
+        <div class="card-body">
+          <p class="card-text">Crema de manos</p>
+          <p class="precio"><span class="precioAntiguo">$39.99</span> $28.99</p>
+          <div class="quantity-container">
+            <button onclick="decreaseQuantity('quantity1')">-</button>
+            <input type="text" id="quantity1" class="quantity-input" value="0">
+            <button onclick="increaseQuantity('quantity1')">+</button>
+          </div>
+        <button class="car" onclick="addToCart(1)">Agregar al carrito</button>                           
+          <a href="#" class="btn btn-dark btn-detalle" onclick="openModal(1)">Ver Detalles</a>
+        </div>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+          <p id="modal-price"></p>
+          <p id="modal-quantity"></p>
+          <p id="modal-promotion"></p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <h6 class="promo">Promoción</h6>
+        <img src="img/popular2.jpg" class="card-img-top" alt="Aguacate">
+        <div class="card-body">
+          <p class="card-text">Aguacate</p>
+          <p class="precio"> <span class="precioAntiguo">$79.99</span> $71.99</p>
+          <div class="quantity-container">
+            <button onclick="decreaseQuantity('quantity2')">-</button>
+            <input type="text" id="quantity2" class="quantity-input" value="0">
+            <button onclick="increaseQuantity('quantity2')">+</button>
+          </div>
+        <button class="car" onclick="addToCart(1)">Agregar al carrito</button>                           
+          <a href="#" class="btn btn-dark btn-detalle" onclick="openModal(2)">Ver Detalles</a>
+        </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <h6 class="promo">Promoción</h6>
+        <img src="img/popular3.jpg" class="card-img-top" alt="Café">
+        <div class="card-body">
+          <p class="card-text">Café soluble descafeinado Aromas</p>
+          <p class="precio"><span class="precioAntiguo">$129.99</span> $116.99</p>
+          <div class="quantity-container">
+            <button onclick="decreaseQuantity('quantity3')">-</button>
+            <input type="text" id="quantity3" class="quantity-input" value="0">
+            <button onclick="increaseQuantity('quantity3')">+</button>
+          </div>
+        <button class="car" onclick="addToCart(1)">Agregar al carrito</button>                           
+          <a href="#" class="btn btn-dark btn-detalle" onclick="openModal(3)">Ver Detalles</a>
+        </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <h6 class="promo">Promoción</h6>
+        <img src="img/popular4.jpg" class="card-img-top" alt="Papel">
+        <div class="card-body">
+          <p class="card-text">Papel higiénico, 100 hojas</p>
+          <p class="precio"><span class="precioAntiguo">$82.99</span> $74.69</p>
+          <div class="quantity-container">
+            <button onclick="decreaseQuantity('quantity4')">-</button>
+            <input type="text" id="quantity4" class="quantity-input" value="0">
+            <button onclick="increaseQuantity('quantity4')">+</button>
+          </div>
+        <button class="car" onclick="addToCart(1)">Agregar al carrito</button>                           
+          <a href="#" class="btn btn-dark btn-detalle" onclick="openModal(4)">Ver Detalles</a>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section class="products">
+      <div class="card" style="width: 18rem;">
+        <img src="img/popular5.jpg" class="card-img-top" alt="Crema manos">
+        <div class="card-body">
+          <p class="card-text">Tomate rojo grande</p>
+          <p class="precio">$18.99</p>
+          <div class="quantity-container">
+            <button onclick="decreaseQuantity('quantity5')">-</button>
+            <input type="text" id="quantity5" class="quantity-input" value="0">
+            <button onclick="increaseQuantity('quantity5')">+</button>
+          </div>
+        <button class="car" onclick="addToCart(1)">Agregar al carrito</button>                           
+          <a href="#" class="btn btn-dark btn-detalle" onclick="openModal(5)">Ver Detalles</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/popular6.jpg" class="card-img-top" alt="yogur">
+        <div class="card-body">
+          <p class="card-text">Yogur griego con fresa</p>
+          <p class="precio">$10.99</p>
+          <div class="quantity-container">
+            <button onclick="decreaseQuantity('quantity6')">-</button>
+            <input type="text" id="quantity6" class="quantity-input" value="0">
+            <button onclick="increaseQuantity('quantity6')">+</button>
+          </div>
+        <button class="car" onclick="addToCart(1)">Agregar al carrito</button>                           
+          <a href="#" class="btn btn-dark btn-detalle" onclick="openModal(6)">Ver Detalles</a>
+        </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/popular7.jpg" class="card-img-top" alt="Chocolate">
+        <div class="card-body">
+          <p class="card-text">Barra chocolate</p>
+          <p class="precio">$14.99</p>
+          <div class="quantity-container">
+            <button onclick="decreaseQuantity('quantity7')">-</button>
+            <input type="text" id="quantity7" class="quantity-input" value="0">
+            <button onclick="increaseQuantity('quantity7')">+</button>
+          </div>
+        <button class="car" onclick="addToCart(1)">Agregar al carrito</button>                           
+          <a href="#" class="btn btn-dark btn-detalle" onclick="openModal(7)">Ver Detalles</a>
+        </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/popular8.jpg" class="card-img-top" alt="lava vajila">
+        <div class="card-body">
+          <p class="card-text">Papel higiénico, 100 hojas</p>
+          <p class="precio">$30.00</p>
+          <div class="quantity-container">
+            <button onclick="decreaseQuantity('quantity8')">-</button>
+            <input type="text" id="quantity8" class="quantity-input" value="0">
+            <button onclick="increaseQuantity('quantity8')">+</button>
+          </div>
+        <button class="car" onclick="addToCart(1)">Agregar al carrito</button>                           
+          <a href="#" class="btn btn-dark btn-detalle" onclick="openModal(8)">Ver Detalles</a>
+        </div>
+        </div>
+        </div>
+    </section>
+  </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="../js/script.js"></script>
+</body>
+<footer>
+  <span class="logo">Super Edén</span>
+  <a href="pages/support.html" class="contacto">Contactanos 604-5555555</a>
+  <div class="redes">
+    <a href="#"><i class="fa-brands fa-facebook-f contacto"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram contacto"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube contacto"></i></a>
+    <a href="#"><i class="fa-brands fa-whatsapp contacto"></i></a>
+</footer>
+  </div>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <title>Inicio sesión</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar nav1">
+            <div class="container-fluid">
+              <span><a class="logo" href="../index.html">Super Edén</a></span>
+              <a class=" text" href="about.html">Acerca de</a>
+              <a class="text" href="support.html">Atención al cliente</a>
+              <i class="fa-solid fa-user-tie">
+              <span><a class="text" href="login.html">Entrar</a></span></i>
+            </div>
+          </nav>
+  
+          <nav class="navbar nav2 navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="nav-item text" href="promotion.html">Promociones</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="text" nav-item href="food.html">Comida</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text" href="drink.html">bebidas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text" href="clean.html">Limpieza del hogar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text" href="personalCare.html">Cuidado personal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text" href="best.html">Más vendidos</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-6" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-light" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+      <main>
+        <div class="container-login">
+            <div class="row">
+                <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                    <div class="panel border bg-white">
+                        <div class="panel-heading">
+                            <h3 class="pt-3 font-weight-bold">Iniciar Sesión</h3>
+                        </div>
+                        <div class="panel-body p-3">
+                            <form>
+                                <div class="form-group py-2">
+                                    <div class="input-field"> <span class="far fa-user p-2"></span> <input type="text" placeholder="Usuario o correo electrónico" id="username1" required> </div>
+                                </div>
+                                <div class="form-group py-1 pb-2">
+                                    <div class="input-field"> <span class="fas fa-lock px-2"></span> <input   type="password" placeholder="Contraseña" required id="password1"> <button class="btn bg-white text-muted" id="show_password" onclick="mostrarPassword()" type="button" > </span><span class="far fa-eye-slash"></span> </button> </div>
+                                </div>
+                                <div class="form-inline"> <input type="checkbox" name="remember" id="remember"> <label for="remember" class="text-muted">Recordar</label> <a href="#" id="forgot" class="font-weight-bold">Has olvidado la contraseña?</a> </div>
+                                <div class="btn btn-danger btn-block mt-3" id="btnEntrar1716" onclick="authenticate()">Entrar</div>
+                                <div class="text-center pt-4 text-muted">No tienes una cuenta?<a href="#" >Registrarse</a> </div>
+                            </form>
+                        </div>
+                        <div class="mx-3 my-2 py-2 bordert">
+                            <div class="text-center py-3"> <a href="https://wwww.facebook.com" target="_blank" class="px-2"> <img  src="https://www.dpreview.com/files/p/articles/4698742202/facebook.jpeg" alt="" class="img-login"> </a> <a href="https://www.google.com" target="_blank" class="px-2"> <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="" class="img-login"> </a> <a href="https://www.github.com" target="_blank" class="px-2"> <img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" alt="" class="img-login"> </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+    <script src="../js/script.js"></script>
+</body>
+<footer>
+    <span class="logo">Super Edén</span>
+    <a href="support.html" class="contacto">Contactanos 604-5555555</a>
+    <div class="redes">
+      <a href="#"><i class="fa-brands fa-facebook-f contacto"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram contacto"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube contacto"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp contacto"></i></a>
+  </footer>
+</html>

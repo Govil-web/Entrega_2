@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Listado de Productos</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/script.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar nav1">
+            <div class="container-fluid">
+              <span><a class="logo" href="../index.html">Super Edén</a></span>
+              <a class=" text" href="about.html">Acerca de</a>
+              <a class="text" href="support.html">Atención al cliente</a>
+            
+            </div>
+          </nav>
+  
+          <nav class="navbar nav2 navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="nav-item text" href="promotion.html">Promociones</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="text" nav-item href="food.html">Comida</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text" href="drink.html">bebidas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text" href="clean.html">Limpieza del hogar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text" href="personalCare.html">Cuidado personal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text" href="best.html">Más vendidos</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-6" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-light" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+      <main>
+        <div class="container">
+          <h1 class="my-4">Lista de Productos</h1>
+          <a href="#" class="btn btn-primary" onclick="openModalCRUD()">Agregar Producto</a>
+          
+          <a class="btn btn-primary float-right" href="../index.html">Cerrar sesion</a>
+          
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>Nombre</th>
+                      <th>Descripción</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>
+                      <th>Promoción</th>
+                      <th>Acciones</th>
+                  </tr>
+              </thead>
+              <tbody id="product-list"></tbody>
+          </table>
+
+        
+</div>
+
+
+
+<!-- Modal para agregar/editar producto -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modal-title"></h2>
+    <form id="productForm">
+      <input type="hidden" id="productId">
+      <div class="mb-3">
+          <label for="productName" class="form-label">Nombre</label>
+          <input  class="form-control" id="modal-title" required>
+      </div>
+      <div class="mb-3">
+          <label for="productDescription" class="form-label">Descripción</label>
+          <textarea class="form-control" id="modal-description" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+          <label for="productPrice" class="form-label">Precio</label>
+          <input type="number" class="form-control" id="modal-price" required>
+      </div>
+      <div class="mb-3">
+          <label for="productQuantity" class="form-label">Cantidad</label>
+          <input type="number" class="form-control" id="modal-quantity" required>
+      </div>
+      <div class="mb-3">
+          <label for="productPromotion" class="form-label">Promoción</label>
+          <input  class="form-control" id="modal-promotion">
+      </div>
+    </form>
+    <a href="#" class="btn btn-primary" onclick="closeModal()">Guardar Producto</a>
+  </div>
+</div>
+
+</main>
+      
+    
+      
+</body>
+<footer>
+    <span class="logo">Super Edén</span>
+    <a href="support.html" class="contacto">Contactanos 604-5555555</a>
+    <div class="redes">
+      <a href="#"><i class="fa-brands fa-facebook-f contacto"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram contacto"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube contacto"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp contacto"></i></a>
+  </footer>
+</html>

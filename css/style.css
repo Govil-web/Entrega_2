@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    background: brown;
+    padding: 20px;
+}
+
+.logo {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.text {
+    font-family: 'Roboto';
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(204, 157, 146);
+}
+
+.fa-solid {
+    color: aliceblue;
+    font-size: 20px;
+    gap: 5px;
+}
+
+span .text {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.nav2, footer {
+    display: flex;
+    background: red;
+    padding: 10px 20px;
+    color: aliceblue;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav2 .nav-item {
+    margin-right: 30px;
+}
+.nav2 button {
+    height: 40px;;
+}
+
+.servicios {
+    padding: 20px 10px 0 5px;
+    text-align: center;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: small;
+}
+.btn2 {
+    padding: 10px 5px;
+    border-left: 2px rgb(58, 54, 54) solid;
+}
+
+.app {
+    font-size: 10px;
+    text-align: left;
+    text-decoration:  underline;
+}
+
+.icon-service {
+    color:red;
+    margin-right: 4rem;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+    position: relative;
+}
+
+.products h3 {
+    position: absolute;
+    margin-right: 62.5rem;
+    font-weight: 700;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 4rem;
+}
+
+.card-img-top {
+    width: 10rem;
+}
+
+.text-titulo {
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 700;
+}
+
+.card .promo {
+    background-color: red;
+    text-align: center;
+    color: #fefefe;
+    font-size: 10px;
+    padding: 2px;
+    width: 100%;
+    position: absolute;
+}
+
+
+.precio {
+    color: red;
+    font-weight: 500;
+}
+
+.precioAntiguo {
+    text-decoration: line-through;
+}
+
+.card-compra{
+    margin: 0px 40px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-left: 10px;
+}
+
+.quantity-container {
+    display: flex;
+    /* align-items: center; */
+}
+
+.quantity-input {
+    width: 80px;
+    text-align: center;
+    border: none;
+}
+
+.quantity-container button {
+    width: 20px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: white;
+}
+
+.car {
+    background: rgba(39, 37, 37, 0.95);
+    color: aliceblue;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.car2 {
+    width: 18rem;
+}
+
+.btn-detalle {
+    width: 15rem;
+}
+
+.contacto{
+    margin: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container-about {
+    padding: 4rem;
+}
+.titulo-nos {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sub-nos {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.sub-nos span {
+    font-weight: 700;
+}
+
+/*Login*/
+.container-login {
+    margin: 50px auto
+}
+
+.panel-heading {
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.text-muted a {
+    color: red;
+    margin-left: 5px;
+}
+
+#forgot {
+    min-width: 100px;
+    margin-left: 12rem;
+    text-decoration: none;
+    color: red;
+}
+
+.form-inline label {
+    padding-left: 10px;
+    margin:0px;
+    cursor: pointer
+}
+
+.btn.btn-danger {
+    margin-top: 10px;
+    border-radius:8px;
+}
+
+.panel {
+    min-height: 380px;
+    box-shadow: 20px 20px 80px rgb(218, 218, 218);
+    border-radius: 12px
+}
+
+.input-field {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: red;
+}
+
+input[type='text'],
+input[type='password'] {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%
+}
+
+.fa-eye-slash.btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#remember {
+    position: absolute;
+    right: 12vw;
+    margin-top: 8px;
+}
+.img-login {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+}
+
+a[target='_blank'] {
+    position: relative;
+    transition: all 0.1s ease-in-out
+}
+
+.bordert {
+    border-top: 1px solid #aaa;
+    position: relative
+}
+
+.bordert:after {
+    content: "Conecta con";
+    position: absolute;
+    top: -13px;
+    left: 33%;
+    background-color: #fff;
+    padding: 0px 8px
+}
+
+/*atención al cliente*/
+.container-contacto {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.btn-contact {
+    padding: 5px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-contact:hover {
+    background-color: rgb(104, 20, 20);
+}
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

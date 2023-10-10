@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "nombre": "Crema de manos",
+        "descripcion": "Crema hidratante, hipoalergenica",
+        "precio": 28.99,
+        "cantidad": 100,
+        "promocion": "En promocion"
+    },
+    {
+        "id": 2,
+        "nombre": "Aguacate",
+        "descripcion": "Importado, calidad superior",
+        "precio": 71.99,
+        "cantidad": 100,
+        "promocion": "En promocion"
+    },
+    {
+        "id": 3,
+        "nombre": "Cafe",
+        "descripcion": "Importado, calidad superior",
+        "precio": 116.99,
+        "cantidad": 100,
+        "promocion": "En promocion"
+    },
+    {
+        "id": 4,
+        "nombre": "Papel higienico",
+        "descripcion": "Importado, calidad superior",
+        "precio": 74.69,
+        "cantidad": 100,
+        "promocion": "En promocion"
+    },
+    {
+        "id": 5,
+        "nombre": "Tomate",
+        "descripcion": "Importado, calidad superior",
+        "precio": 18.99,
+        "cantidad": 100,
+        "promocion": "No esta promocion"
+    },
+    {
+        "id": 6,
+        "nombre": "Yogur griego con fresa",
+        "descripcion": "Importado, calidad superior",
+        "precio": 10.99,
+        "cantidad": 100,
+        "promocion": "No esta promocion"
+    },
+    {
+        "id": 7,
+        "nombre": "Barra de chocolate",
+        "descripcion": "Importado, calidad superior",
+        "precio": 14.99,
+        "cantidad": 100,
+        "promocion": "No esta promocion"
+    },
+    {
+        "id": 8,
+        "nombre": "Lavalosa liquido",
+        "descripcion": "Importado, calidad superior",
+        "precio": 30.00,
+        "cantidad": 100,
+        "promocion": "No esta promocion"
+    }
+]

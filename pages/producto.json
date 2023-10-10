@@ -1,0 +1,250 @@
+[
+    {
+        "id": 1,
+        "nombre": "Crema de manos",
+        "descripcion": "Crema hidratante, hipoalergenica",
+        "precio": 28.99,
+        "cantidad": 100,
+        "promocion": "En promocion"
+    },
+    {
+        "id": 2,
+        "nombre": "Aguacate",
+        "descripcion": "Importado, calidad superior",
+        "precio": 71.99,
+        "cantidad": 100,
+        "promocion": "En promocion"
+    },
+    {
+        "id": 3,
+        "nombre": "Cafe",
+        "descripcion": "Importado, calidad superior",
+        "precio": 116.99,
+        "cantidad": 100,
+        "promocion": "En promocion"
+    },
+    {
+        "id": 4,
+        "nombre": "Papel higienico",
+        "descripcion": "Importado, calidad superior",
+        "precio": 74.69,
+        "cantidad": 100,
+        "promocion": "En promocion"
+    },
+    {
+        "id": 5,
+        "nombre": "Tomate",
+        "descripcion": "Importado, calidad superior",
+        "precio": 18.99,
+        "cantidad": 100,
+        "promocion": "No esta promocion"
+    },
+    {
+        "id": 6,
+        "nombre": "Yogur griego con fresa",
+        "descripcion": "Importado, calidad superior",
+        "precio": 10.99,
+        "cantidad": 100,
+        "promocion": "No esta promocion"
+    },
+    {
+        "id": 7,
+        "nombre": "Barra de chocolate",
+        "descripcion": "Importado, calidad superior",
+        "precio": 14.99,
+        "cantidad": 100,
+        "promocion": "No esta promocion"
+    },
+    {
+        "id": 8,
+        "nombre": "Lavalosa liquido",
+        "descripcion": "Aroma citrico x 750 cc",
+        "precio": 49.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 9,
+        "nombre": "Cereal de granola",
+        "descripcion": "Importado, calidad superior",
+        "precio": 44.99,
+        "cantidad": 100,
+        "promocion": true
+    },
+    {
+        "id": 10,
+        "nombre": "Crema dental blanqueadora",
+        "descripcion": "Importado, calidad superior",
+        "precio": 28.99,
+        "cantidad": 100,
+        "promocion": true
+    },
+    {
+        "id": 11,
+        "nombre": "Jugo de naranja",
+        "descripcion": "Importado, calidad superior",
+        "precio": 39.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 12,
+        "nombre": "Queso crema",
+        "descripcion": "Importado, calidad superior",
+        "precio": 44.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 13,
+        "nombre": "Banano",
+        "descripcion": "Importado, calidad superior",
+        "precio": 44.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 14,
+        "nombre": "Huevos",
+        "descripcion": "Caja x 12 unidades, Importado, calidad superior",
+        "precio": 44.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 15,
+        "nombre": "Leche",
+        "descripcion": "Caja x 1 litro",
+        "precio": 44.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 16,
+        "nombre": "Refresco",
+        "descripcion": "Sabor cola x 3 litros",
+        "precio": 29.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 17,
+        "nombre": "Agua",
+        "descripcion": "Botella x 1 litro",
+        "precio": 44.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 18,
+        "nombre": "Te verde",
+        "descripcion": "Bolsa x 300 gramos",
+        "precio": 44.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 19,
+        "nombre": "Cerveza",
+        "descripcion": "Cerveza negra x 350 cc",
+        "precio": 33.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 20,
+        "nombre": "Vino tinto",
+        "descripcion": "Carbernet suavignon x 375 cc",
+        "precio": 219.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 21,
+        "nombre": "Detergente liquido",
+        "descripcion": "Aroma lavando x 3 litros",
+        "precio": 79.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 22,
+        "nombre": "Blanqueador",
+        "descripcion": "Aroma floral x 2 litros",
+        "precio": 39.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 23,
+        "nombre": "Esponja",
+        "descripcion": "Multiusos x 2 unidades",
+        "precio": 12.00,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 24,
+        "nombre": "Set cuchillos",
+        "descripcion": "Cuchillos en acero inoxidable x 5 unidades",
+        "precio": 269.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 25,
+        "nombre": "Gel de afeitar",
+        "descripcion": "Refrescante, dermatologicamente comprobado",
+        "precio": 84.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 26,
+        "nombre": "Gel ducha",
+        "descripcion": "Para todo el cuerpo, apto para piel sensible",
+        "precio": 35.99,
+        "cantidad": 100,
+        "promocion": true
+    },
+    {
+        "id": 27,
+        "nombre": "Gel antibacterial",
+        "descripcion": "Sin aroma, para piel sensible",
+        "precio": 49.00,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 28,
+        "nombre": "Toallitas humedas",
+        "descripcion": "Para bebe, hipoalergenica, sin alcohol",
+        "precio": 12.00,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 29,
+        "nombre": "Talco bebe",
+        "descripcion": "Sin aroma, para piel sensible",
+        "precio": 28.00,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 30,
+        "nombre": "Champu",
+        "descripcion": "Cabello normal, para piel sensible",
+        "precio": 35.99,
+        "cantidad": 100,
+        "promocion": false
+    },
+    {
+        "id": 31,
+        "nombre": "Filete de salmon",
+        "descripcion": "Empaque al vacio x 300 gramos",
+        "precio": 35.99,
+        "cantidad": 100,
+        "promocion": false
+    }
+]
